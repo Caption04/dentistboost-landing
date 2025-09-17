@@ -1,0 +1,19 @@
+/* 
+====================
+My stylesheet
+==================
+ */
+
+/* basic reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    padding: 1em 0.5em;
+    
+
+}

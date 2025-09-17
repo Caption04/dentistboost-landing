@@ -14,6 +14,19 @@ My stylesheet
 header{
     display: flex;
     padding: 1em 0.5em;
-    
+    background: #000;
+}
 
+.logo-link{
+    margin-right: auto;
+    font-size: clamp(12px, 0.1rem + 2vw, 18px);
+    color: #FFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    
 }

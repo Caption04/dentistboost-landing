@@ -167,7 +167,7 @@ p {
 }
 .cta .btn {
   background: #3aa64c;
-  color: white;           
+  color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
 }
@@ -180,12 +180,40 @@ p {
   font-size: 0.9rem;
 }
 
+/* Dumb stuff I just added to ruin the dumb design */
+.open-menu{
+  color: white;
+  font-size: 24px;
+  background: none; 
+  border-style: none;
+}
+.sidebar{
+  position: absolute;
+  z-index: 1001;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: orange;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.7)
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
   }
-  .feature-content{
+  .feature-content {
     flex-direction: column;
     text-align: center;
   }
@@ -206,25 +234,3 @@ p {
   }
 }
 
-.open-menu{
-  color: white;
-  font-size: 24px;
-  background: none; 
-  border-style: none;
-}
-.sidebar{
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: orange;
-}
-.overlay{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top:0;
-  z-index: 1000;
-  background: rgba(0,0,0,0.7)
-}

@@ -1,12 +1,6 @@
 /* Reset */
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html{
-  overflow-x: hidden;
 }
 body {
   font-family: Arial, sans-serif;
@@ -29,14 +23,8 @@ p {
 /* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #fff;
-}
-.nav-links {
-  display: flex;
   gap: 1.5rem;
+  overflow-x: hidden;
 }
 .nav-links li {
   list-style: none;

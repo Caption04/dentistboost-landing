@@ -8,6 +8,11 @@ body {
   color: #1a1a1a;
   background: #f8faf7;
   overflow-x: hidden;
+  position: relative;
+}
+html{
+  position: relative;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;

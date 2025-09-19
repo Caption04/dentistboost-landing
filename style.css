@@ -26,6 +26,9 @@ p {
   gap: 1.5rem;
   overflow-x: hidden;
 }
+.logo{
+  margin-right: auto;
+}
 .nav-links li {
   list-style: none;
 }
@@ -226,7 +229,7 @@ p {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .sidebar{
     display: flex;
   }

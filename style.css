@@ -193,20 +193,28 @@ p {
   z-index: 1001;
   top: 0;
   right: 0;
+  transform: translateX(100%);
   width: 50vw;
   height: 100vh;
   display: none;
   align-items: center;
   justify-content: center;
-  background: orange;
+  background: #000;
+  transition: all 0.4s linear;
+}
+.sidebar.open{
+  transform: translateX(0)
 }
 .nav-links-sidebar{
-  diplay: none;
   flex-direction: column;
   list-style: none;
 }
 .nav-links-sidebar li{
   margin-bottom: 1em;
+}
+
+.nav-links-sidebar li a{
+  color: #fff;
 }
 .overlay{
   width: 100vw;

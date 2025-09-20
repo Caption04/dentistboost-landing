@@ -30,10 +30,18 @@ p {
   display: flex;
   gap: 1.5rem;
   overflow-x: hidden;
-  padding: 0.3em 0.6em
+  padding: 0.3em 0.6em;
+  background: #000;
 }
 .logo{
   margin-right: auto;
+  width: fit-content;
+  height: fit-content;
+}
+.logo img{
+  width: 15vw;
+  height: auto;
+  min-width: 50px;
 }
 .nav-links li {
   list-style: none;
@@ -184,7 +192,7 @@ p {
 
 /* Dumb stuff I just added to ruin the dumb design */
 .open-menu{
-  color: #000;
+  color: #fff;
   font-size: 24px;
   background: none; 
   border-style: none;

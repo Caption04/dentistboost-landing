@@ -192,7 +192,6 @@ p {
 /* FAQ */
 .faq {
   padding: 3rem 2rem;
-  display: flex;
 }
 .faq h2 {
   text-align: center;
@@ -205,6 +204,7 @@ p {
   font-weight: 400;
 }
 .faq-item {
+  display: flex;
   background: #3aa64c;
   padding: 1.5rem;
   margin-bottom: 1rem;
@@ -216,6 +216,7 @@ p {
   border-style: none;
   border: 1px solid #fff;
   padding: 0.4em;
+  color: #fff;
 }
 
 

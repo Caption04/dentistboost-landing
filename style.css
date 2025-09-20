@@ -115,6 +115,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 1em;
 }
 
 /* Feature */
@@ -256,7 +257,7 @@ p {
   gap: 2em;
   align-items: center;
   background: #fff;
-  border-left: 1px solid #32CD32;
+  border-left: 2px solid #32CD32;
   transition: all 0.4s linear;
 }
 .sidebar.open{
@@ -266,7 +267,6 @@ p {
   flex-direction: column;
   list-style: none;
   display: flex;
-  flex-direction: column;
 }
 .nav-links-sidebar li{
   margin-bottom: 1em;

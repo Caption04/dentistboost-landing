@@ -43,8 +43,13 @@ p {
   height: auto;
   min-width: 90px;
 }
+.nav-links{
+  display: flex;
+}
 .nav-links li {
   list-style: none;
+  color: #fff;
+  margin-right: 0.5em;
 }
 .nav-links a:hover {
   color: #3aa64c;
@@ -95,6 +100,13 @@ p {
 .card img {
   width: 100%;
   border-radius: 8px;
+}
+
+.text-guarantee{
+  margin-bottom: 1em;
+}
+.guarantee{
+  list-style: none;
 }
 
 /* Feature */
@@ -174,6 +186,10 @@ p {
   color: white;
   text-align: center;
   padding: 3rem 2rem;
+}
+.cta h2{
+  color: #fff;
+  margin-bottom: 1em;
 }
 .cta .btn {
   background: #3aa64c;

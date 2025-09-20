@@ -202,9 +202,11 @@ p {
 .faq h3{
   color: #fff;
   font-weight: 400;
+  margin-right: 0.5em;
 }
 .faq-item {
   display: flex;
+  align-items: center;
   background: #3aa64c;
   padding: 1.5rem;
   margin-bottom: 1rem;

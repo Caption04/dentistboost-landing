@@ -41,7 +41,7 @@ p {
 .logo img{
   width: 15vw;
   height: auto;
-  min-width: 50px;
+  min-width: 90px;
 }
 .nav-links li {
   list-style: none;
@@ -204,6 +204,7 @@ p {
   border-style: none;
   color: #32CD32;
   font-size: 24px;
+  margin-left: auto;
 }
 
 .sidebar{
@@ -218,7 +219,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  justify-content: center;
+  align-items: center;
   background: #fff;
   border-left: 1px solid #32CD32;
   transition: all 0.4s linear;
@@ -237,7 +238,7 @@ p {
 }
 
 .nav-links-sidebar li a{
-  color: #fff;
+  color: #000;
 }
 .overlay{
   display: none;

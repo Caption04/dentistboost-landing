@@ -45,7 +45,10 @@ p {
   min-width: 90px;
 }
 .nav-links{
+  height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav-links li {
   list-style: none;
@@ -107,6 +110,7 @@ p {
   margin-bottom: 1em;
 }
 .guarantee{
+  width: 100%;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -130,12 +134,23 @@ p {
 }
 .feature .btn {
   margin-top: 1rem;
+  background: #3aa64c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
 }
 
 /* Process */
 .process {
   padding: 3rem 2rem;
   text-align: center;
+}
+
+.process .btn{
+  background: #3aa64c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
 }
 .steps {
   display: flex;

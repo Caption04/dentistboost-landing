@@ -42,6 +42,7 @@ p {
 .logo img{
   width: 15vw;
   height: auto;
+  max-width: 450px;
   min-width: 90px;
 }
 .nav-links{

@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+:root{
+  font-size: 16px;
+  --ff-primary--: "Playfair Display", serif;
+  --ff-secondary--: "Lato", sans-serif;
+}
+
+
 /* Reset */
 * {
   margin: 0;
 }
 body {
-  font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #1a1a1a;
   background: #f8faf7;
@@ -20,9 +30,13 @@ a {
 }
 h1, h2, h3 {
   color: #133b1f;
+  font-family: var(--ff-primary--);
+  font-size: clamp(16px, 0.1rem + 2vw, 30px);
 }
 p {
   color: #444;
+  font-size: clamp(14px, 0.1rem + 2vw, 18px);
+  font-family: var(--ff-secondary--);
 }
 
 /* Navbar */
@@ -66,7 +80,7 @@ p {
   padding: 4rem 2rem;
 }
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: clamp(22px, 0.1rem + 2vw, 50px);
   margin-bottom: 1rem;
 }
 .hero p {

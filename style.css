@@ -158,6 +158,7 @@ p {
   max-width: 400px;
   border-radius: 12px;
   width: 100%;
+  margin: auto;
 }
 .feature .btn {
   margin-top: 1rem;

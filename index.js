@@ -2,14 +2,15 @@ const openMenu = document.querySelector(".open-menu");
 const sideBar = document.querySelector(".sidebar");
 const overlay = document.querySelector(".overlay");
 openMenu.addEventListener("click", () => {
-    sideBar.classList.add("open");
-    overlay.classList.add("open");
-    document.body.style.overflow = "hidden";
-})
+  sideBar.classList.add("open");
+  overlay.classList.add("open");
+  document.body.style.overflow = "hidden";
+  document.documentElement.style.overflow = "hidden"; // add this
+});
 
-const closemenu = document.querySelector(".close-menu");
 closemenu.addEventListener("click", () => {
-    sideBar.classList.remove("open");
-    overlay.classList.remove("open");
-    document.body.style.overflow = "auto";
-})
+  sideBar.classList.remove("open");
+  overlay.classList.remove("open");
+  document.body.style.overflow = "auto";
+  document.documentElement.style.overflow = "auto"; // add this
+});

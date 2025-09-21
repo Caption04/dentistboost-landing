@@ -69,6 +69,8 @@ p {
   list-style: none;
   color: #fff;
   margin-right: 0.5em;
+  font-size: 16px;
+  font-family: var(--ff-secondary--);
 }
 .nav-links a:hover {
   color: #3aa64c;
@@ -326,6 +328,8 @@ p {
 
 .nav-links-sidebar li a{
   color: #000;
+  font-size: 21px;
+  font-family: var(--ff-secondary--);
 }
 .overlay{
   display: none;

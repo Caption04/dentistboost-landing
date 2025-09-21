@@ -31,11 +31,11 @@ a {
 h1, h2, h3 {
   color: #133b1f;
   font-family: var(--ff-primary--);
-  font-size: clamp(16px, 0.1rem + 2vw, 30px);
+  font-size: clamp(18px, 0.1rem + 2vw, 30px);
 }
 p {
   color: #444;
-  font-size: clamp(14px, 0.1rem + 2vw, 18px);
+  font-size: clamp(16px, 0.1rem + 2vw, 18px);
   font-family: var(--ff-secondary--);
 }
 
@@ -57,7 +57,7 @@ p {
   width: 15vw;
   height: auto;
   max-width: 450px;
-  min-width: 90px;
+  min-width: 100px;
 }
 .nav-links{
   height: 100%;
@@ -144,6 +144,9 @@ p {
 /* Feature */
 .feature {
   padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .feature-content {
   display: flex;
@@ -158,8 +161,8 @@ p {
 }
 .feature .btn {
   margin-top: 1rem;
-  background: #3aa64c;
-  color: white;
+  /* background: #3aa64c; */
+  color: #3aa64c;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
 }
@@ -234,7 +237,7 @@ p {
   padding: 1.5rem;
   margin-bottom: 1rem;
   border-radius: 8px;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .plus{

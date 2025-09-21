@@ -79,12 +79,17 @@ p {
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
 }
-.hero-img img {
+.hero-img{
   margin-top: 2rem;
   width: 100%;
   border-radius: 12px;
   max-height: 350px;
-
+  overflow: hidden;
+}
+.hero-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /* Services */
@@ -192,6 +197,9 @@ p {
 /* FAQ */
 .faq {
   padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .faq h2 {
   text-align: center;
@@ -201,6 +209,7 @@ p {
 
 .faq h3{
   color: #fff;
+  font-size: clamp(12px, 0.1rem + 2vw, 16px);
   font-weight: 400;
   margin-right: 0.5em;
 }
@@ -211,6 +220,7 @@ p {
   padding: 1.5rem;
   margin-bottom: 1rem;
   border-radius: 8px;
+  max-width: 400px;
 }
 
 .plus{
@@ -218,6 +228,7 @@ p {
   border-style: none;
   border: 1px solid #fff;
   padding: 0.4em;
+  margin-left: auto;
   color: #fff;
 }
 

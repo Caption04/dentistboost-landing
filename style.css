@@ -143,6 +143,8 @@ p {
   margin-top: 2rem;
 }
 .card {
+  display: flex;
+  flex-direction: column;
   background: white;
   padding: 1rem;
   border-radius: 12px;
@@ -155,9 +157,9 @@ p {
   margin-bottom: auto;
 }
 
-.card h3{
+/* .card h3{
   margin-top: auto;
-}
+} */
 
 .text-guarantee{
   margin-bottom: 1em;

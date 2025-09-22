@@ -93,7 +93,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(80%);
+  filter: brightness(0.8);
   z-index: 1;
 }
 .hero h1 {

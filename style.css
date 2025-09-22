@@ -132,8 +132,11 @@ p {
   margin-bottom: auto;
 }
 
-.text-guarantee{
+.card h3{
   margin-top: auto;
+}
+
+.text-guarantee{
   margin-bottom: 1em;
 }
 .guarantee{

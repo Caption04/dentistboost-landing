@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Eco Landscaping</title>
+
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo"><img src="logo.png" alt="Eco Landscaping" class="logo-img"></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="open-menu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+
+    <nav class="sidebar" aria-hidden="true">
+      <button class="close-menu" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+      <ul class="nav-links-sidebar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="overlay" aria-hidden="true"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1 class="tagline">Our Landscaping Services</h1>
+    <p>From design to maintenance, we cover all aspects of creating and caring for beautiful outdoor spaces.</p>
+    <a href="contact.html" class="btn">Request a Quote</a>
+  </section>
+
+  <!-- Services cards -->
+  <section class="services">
+    <h2>Our Expertise</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="image-1.jpg" alt="Garden Design">
+        <div class="last-row">
+          <h3>Design</h3>
+          <p>Custom garden layouts, patios, and green spaces.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image-2.jpg" alt="Maintenance">
+        <div class="last-row">
+          <h3>Maintenance</h3>
+          <p>Regular upkeep to keep your yard healthy and beautiful.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image-3.jpg" alt="Planting">
+        <div class="last-row">
+          <h3>Planting</h3>
+          <p>Expert planting of trees, shrubs, and flowers.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image-4.jpg" alt="Lawn Care">
+        <div class="last-row">
+          <h3>Lawn Care</h3>
+          <p>Lush lawns with fertilization, mowing, and treatment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA & Footer -->
+  <section class="cta">
+    <h2>Let’s make your outdoors beautiful</h2>
+    <a href="contact.html" class="btn">Schedule Appointment</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <p>ECO LANDSCAPING © 2025. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

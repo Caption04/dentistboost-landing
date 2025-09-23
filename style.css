@@ -117,20 +117,9 @@ p {
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
-  margin-bottom: 30em !important;
+  margin-bottom: 100em !important;
 }
-.hero-img{
-  margin-top: 2rem;
-  width: 100%;
-  border-radius: 12px;
-  max-height: 350px;
-  overflow: hidden;
-}
-.hero-img img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
+
 
 /* Services */
 .services {

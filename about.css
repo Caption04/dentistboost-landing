@@ -1,53 +1,331 @@
-/* General Styles */
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+  font-size: 16px;
+  --ff-primary--: "Playfair Display", serif;
+  --ff-secondary--: "Lato", sans-serif;
+}
+
+/* Reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+  color: #1a1a1a;
+  background: #f8faf7;
+  overflow-x: hidden;
+  position: relative;
+  font-family: var(--ff-secondary--);
+}
+html{
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1, h2, h3 {
+  color: #133b1f;
+  font-family: var(--ff-primary--);
+  font-size: clamp(18px, 0.1rem + 2vw, 30px);
+}
+p {
+  color: #444;
+  font-size: clamp(16px, 0.1rem + 2vw, 18px);
+  font-family: var(--ff-secondary--);
 }
 
-/* Hero Section */
-.hero {
-  background: #222;
+/* Navbar (same as home) */
+.navbar{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  overflow-x: hidden;
+  padding: 0.3em 0.6em;
+  background: #000;
+}
+.logo{
+  margin-right: auto;
+  width: fit-content;
+  height: fit-content;
+}
+.logo img{
+  width: 15vw;
+  height: auto;
+  max-width: 450px;
+  min-width: 110px;
+}
+.nav-links{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links li {
+  list-style: none;
   color: #fff;
+  margin-right: 1em;
+  font-size: clamp(16px, 0.1rem + 2vw, 22px);
+  font-family: var(--ff-secondary--);
+}
+.nav-links a:hover {
+  color: #3aa64c;
+}
+
+/* Hero (same pattern as home) */
+.hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 4rem 2rem 10em 2em;
+  position: relative;
 }
-
+.hero:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("hero.jpg"); /* keep your hero image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.3);
+  z-index: 1;
+}
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+  font-size: clamp(22px, 0.1rem + 2vw, 50px);
+  margin-bottom: 1rem;
+  color: #fff;
 }
-
 .hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  color: #fff;
+}
+.hero .btn {
+  position: relative;
+  z-index: 2;
+  background: #3aa64c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
 }
 
-/* About Section */
-.about {
-  padding: 40px 20px;
-  max-width: 800px;
+/* Feature (about story) */
+.feature {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feature-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+.feature img {
+  max-width: 480px;
+  border-radius: 12px;
+  width: 100%;
   margin: auto;
 }
-
-.about h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
+.feature .text {
+  flex: 1;
 }
 
-.about p {
-  font-size: 1rem;
+/* Process (mission/approach) */
+.process {
+  padding: 3rem 2rem;
   text-align: center;
 }
+.steps {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.steps div {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 220px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-/* Footer */
-.footer {
-  background: #222;
+/* Team (reusing .services .card-grid .card) */
+.services {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+.card .last-row h3 {
+  margin: 0 0 0.25rem 0;
+}
+
+/* CTA (same) */
+.cta {
+  background: #133b1f;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.cta h2{
   color: #fff;
+  margin-bottom: 1em;
+}
+.cta .btn {
+  background: #3aa64c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+}
+
+/* Footer (same) */
+.footer {
+  background: #f0f0f0;
+  padding: 1rem 2rem;
   text-align: center;
-  padding: 20px;
+  font-size: 0.9rem;
+}
+.footer div p{
+  font-size: clamp(12px, 0.1rem + 2vw, 14px);
+}
+
+/* Mobile menu & sidebar (same) */
+.open-menu{
+  color: #fff;
+  font-size: 24px;
+  background: none; 
+  border-style: none;
+  display: none;
+}
+.close-menu{
+  background: none;
+  border-style: none;
+  color: #32CD32;
+  font-size: 24px;
+  margin-left: auto;
+}
+.sidebar{
+  position: fixed;
+  padding: 1.3em 1em 1em 1em;
+  z-index: 1001;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  background: #fff;
+  border-left: 2px solid #32CD32;
+  transition: all 0.4s linear;
+}
+.sidebar.open{
+  transform: translateX(0)
+}
+.nav-links-sidebar{
+  flex-direction: column;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.nav-links-sidebar li{
+  margin-bottom: 1em;
+}
+.nav-links-sidebar li a{
+  color: #000;
+  font-size: 18px;
+  font-family: var(--ff-secondary--);
+}
+.overlay{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.7)
+}
+.overlay.open{
+  display: block;
+}
+
+/* Responsive (same breakpoints as home) */
+@media (max-width: 770px) {
+  .sidebar{
+    display: flex;
+  }
+  .open-menu{
+    display: inline-block;
+  }
+  .nav-links{
+    display: none;
+  }
+  .nav-links-sidebar{
+    display: flex;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .feature-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .steps {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
 }

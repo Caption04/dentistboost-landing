@@ -1,35 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Eco Landscaping</title>
+
+  <!-- your same fonts & icons -->
   <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>About Us</h1>
-      <p>Learn more about who we are and what we do.</p>
-    </div>
+  <!-- Navbar (exact structure as your home) -->
+  <header class="navbar">
+    <div class="logo"><img src="logo.png" alt="Eco Landscaping" class="logo-img"></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu Button (mobile) -->
+    <button class="open-menu" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Sidebar (mobile menu) -->
+    <nav class="sidebar" aria-hidden="true">
+      <button class="close-menu" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+      <ul class="nav-links-sidebar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- About Section -->
-  <main>
-    <section class="about">
-      <h2>Our Story</h2>
-      <p>
-        We started with a simple mission — to deliver quality and value in everything we do. 
-        Our team is passionate about innovation, consistency, and creating meaningful impact 
-        for our clients and community.
-      </p>
-    </section>
-  </main>
+  <div class="overlay" aria-hidden="true"></div>
 
-  <!-- Footer -->
+  <!-- Hero (same style as home) -->
+  <section class="hero">
+    <h1 class="tagline">About Eco Landscaping</h1>
+    <p>We design and maintain sustainable outdoor spaces that look beautiful and work with nature.</p>
+    <a href="services.html" class="btn">See Our Services</a>
+  </section>
+
+  <!-- About content (uses same component classes/style language) -->
+  <section class="feature">
+    <div class="feature-content">
+      <img src="about-hero.jpg" alt="Team working in garden">
+      <div>
+        <h2>Our Story</h2>
+        <p>Founded with a simple idea — outdoor spaces should be functional, beautiful and sustainable. We combine traditional horticulture and modern eco-methods to create landscapes that last.</p>
+        <p class="text-guarantee">We work with homeowners and businesses to plan, install and maintain landscapes that increase property value and reduce maintenance costs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <h2>Mission & Approach</h2>
+    <div class="steps">
+      <div>
+        <h3>Sustainability</h3>
+        <p>Native planting, water-wise design, and low-impact maintenance.</p>
+      </div>
+      <div>
+        <h3>Craftsmanship</h3>
+        <p>Attention to detail backed by years of experience on the ground.</p>
+      </div>
+      <div>
+        <h3>Customer Care</h3>
+        <p>Clear communication, easy scheduling and reliable service.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Meet The Team</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="team-1.jpg" alt="Team member">
+        <div class="last-row">
+          <h3>John Doe</h3>
+          <p>Founder & Lead Designer</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="team-2.jpg" alt="Team member">
+        <div class="last-row">
+          <h3>Jane Smith</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="team-3.jpg" alt="Team member">
+        <div class="last-row">
+          <h3>Mike Johnson</h3>
+          <p>Maintenance Lead</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA & Footer (same as home) -->
+  <section class="cta">
+    <h2>Ready to transform your outdoor space?</h2>
+    <a href="contact.html" class="btn">Get a Quote</a>
+  </section>
+
   <footer class="footer">
-    <p>&copy; 2025 Your Company. All rights reserved.</p>
+    <div class="footer-info">
+      <p>ECO LANDSCAPING © 2025. All Rights Reserved.</p>
+    </div>
   </footer>
 </body>
 </html>

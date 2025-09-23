@@ -117,7 +117,7 @@ p {
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
-  margin-bottom: 6em;
+  margin-bottom: 15em;
 }
 .hero-img{
   margin-top: 2rem;
@@ -271,7 +271,7 @@ p {
   padding: 1.5rem;
   margin-bottom: 1rem;
   border-radius: 8px;
-  max-width: 250px;
+  min-width: 250px;
   width: 90%;
 }
 
@@ -358,6 +358,7 @@ p {
   flex-direction: column;
   list-style: none;
   display: flex;
+  width: 100%;
   align-items: center;
 }
 .nav-links-sidebar li{

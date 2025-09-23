@@ -117,7 +117,7 @@ p {
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
-  margin-bottom: 30em;
+  margin-bottom: 30em !important;
 }
 .hero-img{
   margin-top: 2rem;

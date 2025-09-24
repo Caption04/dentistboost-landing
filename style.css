@@ -248,7 +248,7 @@ p {
 
 .faq h3{
   color: #fff;
-  font-size: clamp(12px, 0.1rem + 2vw, 16px);
+  font-size: clamp(14px, 0.1rem + 2vw, 16px);
   font-weight: 400;
   margin-right: 0.5em;
 }

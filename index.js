@@ -21,7 +21,7 @@ faqItem.forEach(q => {
   q.addEventListener("click", (e) =>{
     const answer = q.nextElementSibling;
     const positveBtn = e.currentTarget.querySelector(".plus");
-    const negativeBtn = e.currentTarget.querySelector(".negative");
+    const negativeBtn = e.currentTarget.querySelector(".minus");
 
     positveBtn.style.display = "none";
     negativeBtn.style.display = "inline-block";
@@ -36,7 +36,7 @@ faqItem.forEach(q => {
     if(answer.style.maxHeight){
       answer.style.maxHeight = null;
       positveBtn.style.display = "inline-block";
-      negativeBtn.style.display = "inline-block";
+      negativeBtn.style.display = "none";
     }else{
       answer.style.maxHeight = answer.scrollHeight + "px"; 
     }

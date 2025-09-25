@@ -46,7 +46,7 @@ faqItem.forEach(q => {
       positveBtn.style.display = "inline-block";
       negativeBtn.style.display = "none";
     }else{
-      answer.style.maxHeight = 400 + "px"; 
+      answer.style.maxHeight = answer.scrollHeight + "px"; 
       positveBtn.style.display = "none";
       negativeBtn.style.display = "inline-block";
     }

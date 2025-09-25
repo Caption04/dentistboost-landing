@@ -293,10 +293,10 @@ p {
   cursor: pointer;
 }
 
-.positive{
+.plus.positive{
   display: inline-block;
 }
-.negative{
+.plus.negative{
   display: none;
 }
 

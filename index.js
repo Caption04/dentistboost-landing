@@ -19,7 +19,7 @@ closemenu.addEventListener("click", () => {
 const faqItem = document.querySelectorAll(".faq-item");
 faqItem.forEach(q => {
   q.addEventListener("click", (e) =>{
-    const answer = q.nextSibling;
+    const answer = q.nextElementSibling;
     const positveBtn = e.currentTarget.querySelector(".plus");
     const negativeBtn = e.currentTarget.querySelector(".negative");
 
@@ -29,16 +29,16 @@ faqItem.forEach(q => {
     const faqAnswer = document.querySelectorAll(".answer");
     faqAnswer.forEach(a => {
       if(!a == answer){
-        a.style.maxheight = null;
+        a.style.maxHeight = null;
       }
     });
     // toggle answer
-    if(answer.style.maxheight){
-      answer.style.maxheight = null;
+    if(answer.style.maxHeight){
+      answer.style.maxHeight = null;
       positveBtn.style.display = "inline-block";
       negativeBtn.style.display = "inline-block";
     }else{
-      answer.style.maxheight = answer.scrollHeight + "px"; 
+      answer.style.maxHeight = answer.scrollHeight + "px"; 
     }
   })
 })

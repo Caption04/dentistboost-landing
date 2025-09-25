@@ -23,8 +23,8 @@ faqItem.forEach(q => {
     const positveBtn = e.currentTarget.querySelector(".plus");
     const negativeBtn = e.currentTarget.querySelector(".negative");
 
-    positveBtn.style.display = "none";
-    negativeBtn.style.display = "inline-block";
+    positveBtn.style.display = "none" ? "inline-block" : "none";
+    negativeBtn.style.display = "none" ? "inline-block" : "none";
 
     const faqAnswer = document.querySelectorAll(".answer");
     faqAnswer.forEach(a => {

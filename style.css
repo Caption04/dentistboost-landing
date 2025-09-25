@@ -293,13 +293,16 @@ p {
   color: #fff;
   cursor: pointer;
 }
+.minus{
+  background: none;
+  border-style: none;
+  border: 1px solid #fff;
+  padding: 0.4em;
+  margin-left: auto;
+  color: #fff;
+  cursor: pointer;
+}
 
-.plus .positive{
-  display: inline-block;
-}
-.plus .negative{
-  display: none;
-}
 
 /* CTA */
 .cta {

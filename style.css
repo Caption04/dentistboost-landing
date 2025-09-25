@@ -279,6 +279,7 @@ p {
   color: #000;
   font-size: clamp(14px, 0.1rem + 2vw, 16px);
   font-weight: 400;
+  max-height: 0;
 }
 
 .plus{
@@ -291,7 +292,12 @@ p {
   cursor: pointer;
 }
 
-
+.positive{
+  display: inline-block;
+}
+.negative{
+  display: none;
+}
 
 /* CTA */
 .cta {

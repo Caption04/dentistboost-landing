@@ -25,7 +25,14 @@ faqItem.forEach(q => {
 
     positveBtn.style.display = "none";
     negativeBtn.style.display = "inline-block";
-
+    faqItem.forEach(item => {
+      if(item !== q){
+        const pBtn = item.querySelector("plus");
+        const nBtn = item.querySelector("minus");
+        pBtn.style.display = "inline-block";
+        nBtn.style.display = "none"
+      }
+    })
     const faqAnswer = document.querySelectorAll(".answer");
     faqAnswer.forEach(a => {
       if(a !== answer){

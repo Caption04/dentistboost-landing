@@ -23,18 +23,22 @@ faqItem.forEach(q => {
     const positveBtn = e.currentTarget.querySelector(".plus");
     const negativeBtn = e.currentTarget.querySelector(".negative");
 
-    positveBtn.style.display = "none" ? "inline-block" : "none";
-    negativeBtn.style.display = "none" ? "inline-block" : "none";
+    // positveBtn.style.display = "none";
+    // negativeBtn.style.display = "inline-block";
 
     const faqAnswer = document.querySelectorAll(".answer");
     faqAnswer.forEach(a => {
       if(!a == answer){
+        positveBtn.style.display = "inline-block";
+        negativeBtn.style.display = "none"
         a.style.maxheight = null;
       }
     });
     // toggle answer
     if(answer.style.maxheight){
-      answer.style.maxheight = null
+      answer.style.maxheight = null;
+      positveBtn.style.display = "inline-block";
+      negativeBtn.style.display = "none"
     }else{
       answer.style.maxheight = answer.scrollHeight + "px"; 
     }

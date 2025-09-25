@@ -30,6 +30,7 @@ faqItem.forEach(q => {
     faqAnswer.forEach(a => {
       if(a !== answer){
         a.style.maxHeight = null;
+        
       }
     });
     // toggle answer
@@ -39,6 +40,8 @@ faqItem.forEach(q => {
       negativeBtn.style.display = "none";
     }else{
       answer.style.maxHeight = answer.scrollHeight + "px"; 
+      positveBtn.style.display = "none";
+      negativeBtn.style.display = "inline-block";
     }
   })
 })

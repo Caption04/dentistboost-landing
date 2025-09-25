@@ -280,6 +280,7 @@ p {
   font-size: clamp(14px, 0.1rem + 2vw, 16px);
   font-weight: 400;
   max-height: 0;
+  overflow: hidden;
 }
 
 .plus{

@@ -28,7 +28,7 @@ faqItem.forEach(q => {
 
     const faqAnswer = document.querySelectorAll(".answer");
     faqAnswer.forEach(a => {
-      if(!a == answer){
+      if(a !== answer){
         a.style.maxHeight = null;
       }
     });

@@ -16,4 +16,27 @@ closemenu.addEventListener("click", () => {
   document.documentElement.style.overflow = "auto"; // add this
 });
 
-cons
+const faqItem = document.querySelectorAll(".faq-item");
+faqItem.forEach(q => {
+  q.addEventListener("click", (e) =>{
+    const answer = q.nextSibling;
+    const positveBtn = e.currentTarget.querySelector(".plus");
+    const negativeBtn = e.currentTarget.querySelector(".negative");
+
+    positveBtn.style.display = "none";
+    negativeBtn.style.display = "inline-block";
+
+    const faqAnswer = document.querySelectorAll(".answer");
+    faqAnswer.forEach(a => {
+      if(!a == answer){
+        a.style.maxheight = null;
+      }
+    });
+    // toggle answer
+    if(answer.style.maxheight){
+      answer.style.maxheight = null
+    }else{
+      answer.style.maxheight = answer.scrollHeight + "px"; 
+    }
+  })
+})

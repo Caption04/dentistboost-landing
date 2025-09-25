@@ -294,6 +294,7 @@ p {
   cursor: pointer;
 }
 .minus{
+  display: none;
   background: none;
   border-style: none;
   border: 1px solid #fff;

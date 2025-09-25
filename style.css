@@ -265,6 +265,8 @@ p {
 
 
 .answer{
+  max-height: 0;
+  overflow: hidden;
   display: flex;
   align-items: center;
   border: 1px solid #3aa64c;
@@ -279,8 +281,6 @@ p {
   color: #000;
   font-size: clamp(14px, 0.1rem + 2vw, 16px);
   font-weight: 400;
-  max-height: 0;
-  overflow: hidden;
 }
 
 .plus{

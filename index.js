@@ -23,14 +23,12 @@ faqItem.forEach(q => {
     const positveBtn = e.currentTarget.querySelector(".plus");
     const negativeBtn = e.currentTarget.querySelector(".negative");
 
-    // positveBtn.style.display = "none";
-    // negativeBtn.style.display = "inline-block";
+    positveBtn.style.display = "none";
+    negativeBtn.style.display = "inline-block";
 
     const faqAnswer = document.querySelectorAll(".answer");
     faqAnswer.forEach(a => {
       if(!a == answer){
-        positveBtn.style.display = "inline-block";
-        negativeBtn.style.display = "none"
         a.style.maxheight = null;
       }
     });
@@ -38,7 +36,7 @@ faqItem.forEach(q => {
     if(answer.style.maxheight){
       answer.style.maxheight = null;
       positveBtn.style.display = "inline-block";
-      negativeBtn.style.display = "none"
+      negativeBtn.style.display = "inline-block";
     }else{
       answer.style.maxheight = answer.scrollHeight + "px"; 
     }

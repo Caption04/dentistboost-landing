@@ -27,8 +27,8 @@ faqItem.forEach(q => {
     negativeBtn.style.display = "inline-block";
     faqItem.forEach(item => {
       if(item !== q){
-        const pBtn = item.querySelector("plus");
-        const nBtn = item.querySelector("minus");
+        const pBtn = item.querySelector(".plus");
+        const nBtn = item.querySelector(".minus");
         pBtn.style.display = "inline-block";
         nBtn.style.display = "none"
       }

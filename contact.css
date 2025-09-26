@@ -201,7 +201,8 @@ form{
   width: 90%;
   gap:1em;
   text-align:left;
-  background: green;
+  background: orange;
+  margin: auto;
 }
 input,textarea{
   padding:0.8em;

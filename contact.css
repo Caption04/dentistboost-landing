@@ -160,14 +160,12 @@ p{
   z-index:2;
   font-size:clamp(22px,0.1rem + 2vw,50px);
   margin-bottom:1rem;
-  color:#fff;
 }
 .hero p{
   position:relative;
   z-index:2;
   max-width:600px;
   margin:0 auto 1.5rem;
-  color:#fff;
 }
 .hero .btn{
   position:relative;

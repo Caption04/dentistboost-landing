@@ -52,7 +52,7 @@ faqItem.forEach(q => {
     }else{
       answer.style.maxHeight = 400 + "px"; 
       answer.style.padding = 1.5 + "rem";
-      answer.style.border = 1 + "px" + "solid" + "#3aa64c"
+      answer.style.border = `${1}px solid #3aa64c`;
       positveBtn.style.display = "none";
       negativeBtn.style.display = "inline-block";
     }

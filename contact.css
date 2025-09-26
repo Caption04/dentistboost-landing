@@ -201,7 +201,7 @@ form{
   width: 90%;
   gap:1em;
   text-align:left;
-  background: orange;
+  /* background: orange; */
   margin: auto;
 }
 input,textarea{

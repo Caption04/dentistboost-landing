@@ -39,6 +39,7 @@ faqItem.forEach(q => {
         a.style.maxHeight = null;
         a.style.padding = null;
         a.style.border = null;
+        a.querySelector(".answer-text").style.visibility = "hidden";
         
       }
     });
@@ -47,12 +48,14 @@ faqItem.forEach(q => {
       answer.style.maxHeight = null;
       answer.style.padding = null;
       answer.style.border = null;
+      answer.querySelector(".answer-text").style.visibility = "hidden";
       positveBtn.style.display = "inline-block";
       negativeBtn.style.display = "none";
     }else{
       answer.style.maxHeight = 400 + "px"; 
       answer.style.padding = 1.5 + "rem";
       answer.style.border = `${1}px solid #3aa64c`;
+      answer.querySelector(".answer-text").style.visibility = "visible";
       positveBtn.style.display = "none";
       negativeBtn.style.display = "inline-block";
     }

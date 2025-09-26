@@ -37,16 +37,22 @@ faqItem.forEach(q => {
     faqAnswer.forEach(a => {
       if(a !== answer){
         a.style.maxHeight = null;
+        a.style.padding = null;
+        a.style.border = null;
         
       }
     });
     // toggle answer
     if(answer.style.maxHeight){
       answer.style.maxHeight = null;
+      answer.style.padding = null;
+      answer.style.border = null;
       positveBtn.style.display = "inline-block";
       negativeBtn.style.display = "none";
     }else{
       answer.style.maxHeight = 400 + "px"; 
+      answer.style.padding = 1.5 + "rem";
+      answer.style.border = 1 + "px" + "solid" + "#3aa64c"
       positveBtn.style.display = "none";
       negativeBtn.style.display = "inline-block";
     }

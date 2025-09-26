@@ -182,7 +182,7 @@ p{
 
 /* Contact Form */
 .process{
-  padding:3rem 3rem;
+  padding:3rem 2rem;
   text-align:center;
   display: flex;
   flex-direction: column;
@@ -198,9 +198,10 @@ p{
 form{
   display:flex;
   flex-direction:column;
+  width: 90%;
   gap:1em;
   text-align:left;
-  background: red;
+  background: green;
 }
 input,textarea{
   padding:0.8em;

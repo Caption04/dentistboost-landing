@@ -200,7 +200,7 @@ input,textarea{
   border:1px solid #ccc;
   font-family:var(--ff-secondary--);
   font-size:1rem;
-  width:100%;
+  width:90%;
   resize:none;
 }
 button.btn{
